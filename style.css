@@ -1,0 +1,96 @@
+*{
+    margin: 0; padding: 0;
+}
+#top{
+    width: 100%; height: 400px; 
+
+}
+#top img{
+    width: 100%; height: 100%; 
+
+}
+#navbar{
+    width: 100%; height: 40px; background-color: rgb(42, 126, 165);
+}
+#navbar ul{
+    list-style: none; display: flex; gap: 10px;
+}
+#navbar li{
+    cursor: pointer; margin: 10px;
+}
+#navbar ul li:hover{
+    text-decoration: underline 1.5px solid rgb(255, 255, 255);
+}
+#navbar a{
+    text-decoration: none; color: rgb(12, 13, 14); text-transform: uppercase;
+}
+#welcome h3, p{
+    text-align: center; 
+}
+#moto{
+    width: 30%; height: 40px; margin: auto; 
+    background-color: violet;
+    border-radius: 5px;
+}
+
+#container{
+    width: 100%; display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 10px;
+}
+#container .box{ width: 100%; height: 100%;
+  
+    border-radius: 8px;
+    cursor: pointer; overflow: hidden; 
+} 
+
+#container .box img{
+    overflow: hidden;  border-radius: 8px;
+
+} 
+.box h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box:hover img{
+    transform: scale(1.1);
+}
+.box img{
+    transition: 1s;
+}
+
+
+#feature ul{ list-style: none; 
+     }
+
+#feature li{
+    text-align: center;
+}
+#feature h2{
+    text-align: center;
+}
+
+#ceremony p{
+    background-color: darkgray; 
+}
+
+#footer{
+    background-image: linear-gradient(to left, orange, green);
+}
+#footer p{
+    color: aliceblue; padding: 5px;
+}
+@media (max-width: 520px) {
+    #container{
+        display: block;
+       
+    }
+    
+}
+/*@media (min-width: 521px) and (max-width: 950px){
+    #gallery{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+*/
